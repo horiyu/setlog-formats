@@ -1,0 +1,17 @@
+{
+  "spec": 1,
+  "name": "シネマ",
+  "description": "シネスコの黒帯とティール＆オレンジ。一言を字幕に",
+  "order": 20,
+  "clip": { "mode": "head", "duration": 3 },
+  "frame": { "mode": "fill" },
+  "effects": [
+    { "type": "lut", "file": "../../assets/teal-orange.cube" },
+    { "type": "grade", "contrast": 1.08, "saturation": 0.92 },
+    { "type": "grain", "amount": 8 },
+    { "type": "vignette", "strength": 0.3 },
+    { "type": "letterbox", "ratio": 2.39 },
+    { "type": "fade", "in": 0.4 },
+    { "type": "text", "text": "{caption}", "font": "serif", "position": "bottom", "margin": 42, "size": 44, "color": "#F2F2F2" }
+  ]
+}

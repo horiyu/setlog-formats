@@ -1,0 +1,15 @@
+{
+  "spec": 1,
+  "name": "モノクロ",
+  "description": "硬めの白黒と粒子",
+  "order": 30,
+  "clip": { "mode": "head", "duration": 3 },
+  "frame": { "mode": "fill" },
+  "effects": [
+    { "type": "mono" },
+    { "type": "grade", "contrast": 1.35, "brightness": -0.03 },
+    { "type": "grain", "amount": 24 },
+    { "type": "vignette", "strength": 0.55 },
+    { "type": "text", "text": "{date:%Y.%m.%d} {weekday_ja}", "font": "sans", "position": "top-right", "margin": 48, "size": 34, "color": "#FFFFFFCC" }
+  ]
+}

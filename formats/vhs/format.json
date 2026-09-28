@@ -1,0 +1,19 @@
+{
+  "spec": 1,
+  "name": "VHS",
+  "description": "90年代のホームビデオ。日付入り",
+  "order": 10,
+  "clip": { "mode": "head", "duration": 3 },
+  "frame": { "mode": "fill" },
+  "effects": [
+    { "type": "grade", "contrast": 1.12, "saturation": 0.78, "temperature": 0.35, "brightness": 0.02 },
+    { "type": "blur", "radius": 1.2 },
+    { "type": "rgbshift", "amount": 5 },
+    { "type": "scanlines", "spacing": 3, "opacity": 0.22 },
+    { "type": "grain", "amount": 16 },
+    { "type": "vignette", "strength": 0.35 },
+    { "type": "text", "text": "▶ PLAY", "font": "mono", "position": "top-left", "margin": 56, "size": 52, "shadow": 3 },
+    { "type": "text", "text": "{time}", "font": "mono", "position": "bottom-left", "margin": 56, "size": 52, "shadow": 3 },
+    { "type": "text", "text": "{date:%b. %d %Y}", "uppercase": true, "font": "mono", "position": "bottom-right", "margin": 56, "size": 52, "shadow": 3 }
+  ]
+}

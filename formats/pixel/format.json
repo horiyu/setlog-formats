@@ -1,0 +1,13 @@
+{
+  "spec": 1,
+  "name": "ドット",
+  "description": "ゲーム画面みたいな粗いドット",
+  "order": 60,
+  "clip": { "mode": "head", "duration": 3 },
+  "frame": { "mode": "fill" },
+  "effects": [
+    { "type": "grade", "saturation": 1.45, "contrast": 1.2 },
+    { "type": "pixelate", "size": 14 },
+    { "type": "text", "text": "{caption}", "font": "mono", "position": "bottom", "margin": 40, "size": 48, "border": 4 }
+  ]
+}

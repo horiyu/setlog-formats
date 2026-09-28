@@ -1,0 +1,9 @@
+{
+  "spec": 1,
+  "name": "そのまま",
+  "description": "何もしない。最初の3秒を枠いっぱいに",
+  "order": 0,
+  "clip": { "mode": "head", "duration": 3 },
+  "frame": { "mode": "fill" },
+  "effects": []
+}

@@ -1,0 +1,12 @@
+{
+  "spec": 1,
+  "name": "タイムラプス",
+  "description": "撮ったぶん全部を2.5秒に早回し",
+  "order": 40,
+  "clip": { "mode": "fit", "duration": 2.5 },
+  "frame": { "mode": "fill" },
+  "effects": [
+    { "type": "grade", "saturation": 1.15, "contrast": 1.05 },
+    { "type": "text", "text": "×{speed}", "font": "sans-bold", "position": "top-right", "margin": 48, "size": 56, "box": true }
+  ]
+}

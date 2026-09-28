@@ -1,0 +1,11 @@
+{
+  "spec": 1,
+  "name": "ブーメラン",
+  "description": "最初の1.3秒を行って戻る",
+  "order": 50,
+  "clip": { "mode": "head", "duration": 2.6, "loop": "boomerang" },
+  "frame": { "mode": "fill" },
+  "effects": [
+    { "type": "grade", "saturation": 1.1 }
+  ]
+}
