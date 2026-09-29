@@ -1,0 +1,11 @@
+{
+  "spec": 1,
+  "name": "オーラ",
+  "description": "人の輪郭がゆらめく光をまとう",
+  "order": 170,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "grade", "brightness": -0.06, "contrast": 1.05, "saturation": 0.9 },
+    { "type": "aura", "width": 0.045, "strength": 0.8 }
+  ]
+}

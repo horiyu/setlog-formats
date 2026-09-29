@@ -1,0 +1,10 @@
+{
+  "spec": 1,
+  "name": "置き手紙",
+  "description": "一言を札にしてその場に置く。カメラが動いても置いた場所に残る",
+  "order": 150,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "pin", "text": "{caption}", "style": "card", "tilt": -5, "size": 72 }
+  ]
+}

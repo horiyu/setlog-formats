@@ -1,0 +1,10 @@
+{
+  "spec": 1,
+  "name": "吹き出し",
+  "description": "写っている人の頭の上に、一言の吹き出しがついていく",
+  "order": 160,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "speech", "text": "{caption}", "size": 52 }
+  ]
+}

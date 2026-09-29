@@ -1,0 +1,10 @@
+{
+  "spec": 1,
+  "name": "異世界",
+  "description": "人だけ残して、背景を宇宙・水中・絵画のどれかに",
+  "order": 180,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "background", "files": ["../../assets/backgrounds/space.png", "../../assets/backgrounds/underwater.png", "../../assets/backgrounds/painting.png"] }
+  ]
+}
