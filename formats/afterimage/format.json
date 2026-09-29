@@ -1,0 +1,10 @@
+{
+  "spec": 1,
+  "name": "残像",
+  "description": "動いたものが色を変えながら尾を引く",
+  "order": 190,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "trail", "decay": 0.9, "hue_shift": 0.7, "strength": 1 }
+  ]
+}

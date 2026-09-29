@@ -1,0 +1,14 @@
+{
+  "spec": 1,
+  "name": "サーマル",
+  "description": "熱カメラの色と計測表示",
+  "order": 210,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "thermal", "palette": "inferno", "contrast": 1.35 },
+    { "type": "grain", "amount": 6 },
+    { "type": "text", "text": "● REC   THERMAL", "font": "mono", "position": "top-left", "margin": 44, "size": 34, "color": "#FFFFFFD0" },
+    { "type": "text", "text": "36.5°C", "font": "mono", "position": "center", "size": 44, "color": "#FFFFFFE0", "shadow": 2 },
+    { "type": "text", "text": "{date:%Y-%m-%d} {time}", "font": "mono", "position": "bottom-right", "margin": 44, "size": 30, "color": "#FFFFFFC0" }
+  ]
+}

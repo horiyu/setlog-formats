@@ -1,0 +1,11 @@
+{
+  "spec": 1,
+  "name": "グリッチ",
+  "description": "ときどき画面がずれて裂ける",
+  "order": 200,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "grade", "contrast": 1.1, "saturation": 1.1 },
+    { "type": "glitch", "amount": 0.6, "rate": 3 }
+  ]
+}

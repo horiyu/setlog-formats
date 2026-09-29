@@ -1,0 +1,10 @@
+{
+  "spec": 1,
+  "name": "ネオン",
+  "description": "景色が暗く沈んで、輪郭だけが色を変えながら光る",
+  "order": 220,
+  "clip": { "mode": "head", "duration": 3 },
+  "effects": [
+    { "type": "neon", "thickness": 2, "glow": 0.8, "dim": 0.16, "cycle": 0.25 }
+  ]
+}
