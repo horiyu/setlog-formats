@@ -9,7 +9,6 @@
   },
   "effects": [
     { "type": "grade", "saturation": 1.15, "contrast": 1.06 },
-    { "type": "particles", "kind": "confetti", "count": 560, "size": 0.02, "speed": 0.75, "bursts": 4, "glitter": 0.25 },
-    { "type": "fade", "in": 0.25, "color": "white" }
+    { "type": "particles", "kind": "confetti", "count": 560, "size": 0.02, "speed": 0.75, "bursts": 4, "glitter": 0.25 }
   ]
 }
