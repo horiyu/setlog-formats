@@ -1,0 +1,15 @@
+{
+  "spec": 1,
+  "name": "紙吹雪",
+  "description": "四方から紙吹雪が何度も打ち上がって、きらきら降ってくる",
+  "order": 140,
+  "clip": {
+    "mode": "head",
+    "duration": 3
+  },
+  "effects": [
+    { "type": "grade", "saturation": 1.15, "contrast": 1.06 },
+    { "type": "particles", "kind": "confetti", "count": 560, "size": 0.02, "speed": 0.75, "bursts": 4, "glitter": 0.25 },
+    { "type": "fade", "in": 0.25, "color": "white" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "spec": 1,
+  "name": "雪",
+  "description": "大粒の雪が吹きつける。手前はぼけて速く、奥は物の後ろに",
+  "order": 110,
+  "clip": {
+    "mode": "head",
+    "duration": 3
+  },
+  "effects": [
+    { "type": "grade", "temperature": -0.35, "saturation": 0.85, "brightness": 0.03 },
+    { "type": "particles", "kind": "snow", "count": 650, "size": 0.018, "speed": 0.5, "wind": 0.06 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "spec": 1,
+  "name": "花吹雪",
+  "description": "桜吹雪が風にあおられて画面いっぱいに舞う",
+  "order": 120,
+  "clip": {
+    "mode": "head",
+    "duration": 3
+  },
+  "effects": [
+    { "type": "grade", "temperature": 0.2, "saturation": 1.08, "brightness": 0.03 },
+    { "type": "particles", "kind": "petals", "count": 300, "size": 0.026, "speed": 0.5, "wind": 0.22 }
+  ]
+}

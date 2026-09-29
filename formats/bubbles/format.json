@@ -1,0 +1,13 @@
+{
+  "spec": 1,
+  "name": "シャボン玉",
+  "description": "大小の虹色シャボン玉が次々に湧き上がる",
+  "order": 130,
+  "clip": {
+    "mode": "head",
+    "duration": 3
+  },
+  "effects": [
+    { "type": "particles", "kind": "bubbles", "count": 95, "size": 0.05, "speed": 0.35 }
+  ]
+}
