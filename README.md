@@ -10,27 +10,27 @@
 *Formats for setlog-remix: point the iOS Shortcut at a repository like this one and pick a format after
 shooting. A format is a JSON file — no code runs — so anyone can publish one.*
 
-| id | 名前 | 中身 |
-|---|---|---|
-| `plain` | そのまま | 最初の3秒を枠いっぱいに |
-| `vhs` | VHS | 色あせ・にじみ・走査線・ノイズ、`▶ PLAY` と日付時刻 |
-| `film` | シネマ | ティール＆オレンジの LUT、シネスコの黒帯、一言を字幕に |
-| `mono` | モノクロ | 硬めの白黒と粒子、日付と曜日 |
-| `timelapse` | タイムラプス | 撮ったぶん全部を 2.5 秒に早回し、倍率を表示 |
-| `boomerang` | ブーメラン | 最初の 1.3 秒を行って戻る |
-| `pixel` | ドット | 粗いドットに潰して、一言を下に |
-| `snow` | 雪 | 大粒の雪が吹きつける。手前はぼけて速く、奥は物の後ろに回り込む |
-| `sakura` | 花吹雪 | 桜吹雪が風にあおられて画面いっぱいに舞う |
-| `bubbles` | シャボン玉 | 大小の虹色シャボン玉が次々に湧き上がる |
-| `confetti` | 紙吹雪 | 四隅と真ん中から紙吹雪が何度も打ち上がって、きらきら降ってくる |
-| `note` | 置き手紙 | 一言を札にしてその場に置く。カメラが動いても置いた場所に残り、人の後ろに隠れる |
-| `speech` | 吹き出し | 写っている人の頭の上に、一言の吹き出しがついていく |
-| `aura` | オーラ | 人の輪郭がゆらめく光をまとう |
-| `elsewhere` | 異世界 | 人だけ残して、背景を宇宙・水中・絵画のどれかに（投稿ごとにランダム） |
-| `afterimage` | 残像 | 動いたものが色を変えながら尾を引く |
-| `glitch` | グリッチ | ときどき画面がずれて裂ける |
-| `thermal` | サーマル | 熱カメラの色と計測表示 |
-| `neon` | ネオン | 景色が暗く沈んで、輪郭だけが色を変えながら光る |
+| id | 名前 | 中身 | 見た目 |
+|---|---|---|---|
+| `plain` | そのまま | 最初の3秒を枠いっぱいに | — |
+| `vhs` | VHS | 色あせ・にじみ・走査線・ノイズ、`▶ PLAY` と日付時刻 | <img src="docs/previews/vhs.gif" width="200"> |
+| `film` | シネマ | ティール＆オレンジの LUT、シネスコの黒帯、一言を字幕に | <img src="docs/previews/film.gif" width="200"> |
+| `mono` | モノクロ | 硬めの白黒と粒子、日付と曜日 | <img src="docs/previews/mono.gif" width="200"> |
+| `timelapse` | タイムラプス | 撮ったぶん全部を 2.5 秒に早回し、倍率を表示 | <img src="docs/previews/timelapse.gif" width="200"> |
+| `boomerang` | ブーメラン | 最初の 1.3 秒を行って戻る | <img src="docs/previews/boomerang.gif" width="200"> |
+| `pixel` | ドット | 粗いドットに潰して、一言を下に | <img src="docs/previews/pixel.gif" width="200"> |
+| `snow` | 雪 | 大粒の雪が吹きつける。手前はぼけて速く、奥は物の後ろに回り込む | <img src="docs/previews/snow.gif" width="200"> |
+| `sakura` | 花吹雪 | 桜吹雪が風にあおられて画面いっぱいに舞う | <img src="docs/previews/sakura.gif" width="200"> |
+| `bubbles` | シャボン玉 | 大小の虹色シャボン玉が次々に湧き上がる | <img src="docs/previews/bubbles.gif" width="200"> |
+| `confetti` | 紙吹雪 | 四隅と真ん中から紙吹雪が何度も打ち上がって、きらきら降ってくる | <img src="docs/previews/confetti.gif" width="200"> |
+| `note` | 置き手紙 | 一言を札にしてその場に置く。カメラが動いても置いた場所に残り、人の後ろに隠れる | <img src="docs/previews/note.gif" width="200"> |
+| `speech` | 吹き出し | 写っている人の頭の上に、一言の吹き出しがついていく | <img src="docs/previews/speech.gif" width="200"> |
+| `aura` | オーラ | 人の輪郭がゆらめく光をまとう | <img src="docs/previews/aura.gif" width="200"> |
+| `elsewhere` | 異世界 | 人だけ残して、背景を宇宙・水中・絵画のどれかに（投稿ごとにランダム） | <img src="docs/previews/elsewhere.gif" width="200"> |
+| `afterimage` | 残像 | 動いたものが色を変えながら尾を引く | <img src="docs/previews/afterimage.gif" width="200"> |
+| `glitch` | グリッチ | ときどき画面がずれて裂ける | <img src="docs/previews/glitch.gif" width="200"> |
+| `thermal` | サーマル | 熱カメラの色と計測表示 | <img src="docs/previews/thermal.gif" width="200"> |
+| `neon` | ネオン | 景色が暗く沈んで、輪郭だけが色を変えながら光る | <img src="docs/previews/neon.gif" width="200"> |
 
 雪から残像までとグリッチ・ネオンは、絵を見て描くエフェクト（下の「AR のエフェクト」）を使う。setlog-remix 側で
 `bin/setup-ar.sh` が済んでいること。GPU は要らず、普通のノート PC の CPU で 3 秒の動画が 30 秒ほどで描ける。
@@ -61,15 +61,15 @@ shooting. A format is a JSON file — no code runs — so anyone can publish one
 ### いちばん上
 
 | キー | 既定 | |
-|---|---|---|
-| `spec` | 1 | 書式の版。今は 1 |
-| `name` | id | 一覧に出る名前（40字まで） |
-| `description` | "" | 一覧で名前の横に出る説明（120字まで） |
-| `order` | 100 | 一覧の並び順（小さいほど上） |
-| `author` | "" | 作者 |
-| `clip` | | どこを使うか（下） |
-| `frame` | | 枠への収め方（下） |
-| `effects` | [] | 上から順にかかるエフェクト（24個まで） |
+|---|---|---|---|
+| `spec` | 1 | 書式の版。今は 1 | — |
+| `name` | id | 一覧に出る名前（40字まで） | — |
+| `description` | "" | 一覧で名前の横に出る説明（120字まで） | — |
+| `order` | 100 | 一覧の並び順（小さいほど上） | — |
+| `author` | "" | 作者 | — |
+| `clip` | | どこを使うか（下） | — |
+| `frame` | | 枠への収め方（下） | — |
+| `effects` | [] | 上から順にかかるエフェクト（24個まで） | — |
 
 ### clip
 
@@ -84,10 +84,10 @@ shooting. A format is a JSON file — no code runs — so anyone can publish one
 ### frame
 
 | キー | 既定 | |
-|---|---|---|
-| `mode` | `fill` | `fill` は切り取って枠いっぱい、`fit` は全体を収めて余白をぼかしで埋める |
-| `turn` | `none` | 縦の動画を `ccw`（左回り）/ `cw`（右回り）に倒してから収める |
-| `background` | `#0E0E10` | 予備の背景色 |
+|---|---|---|---|
+| `mode` | `fill` | `fill` は切り取って枠いっぱい、`fit` は全体を収めて余白をぼかしで埋める | — |
+| `turn` | `none` | 縦の動画を `ccw`（左回り）/ `cw`（右回り）に倒してから収める | — |
+| `background` | `#0E0E10` | 予備の背景色 | — |
 
 ### effects
 
@@ -118,18 +118,18 @@ shooting. A format is a JSON file — no code runs — so anyone can publish one
 `text`:
 
 | キー | 既定 | |
-|---|---|---|
-| `text` | （必須） | 200字まで。改行は `\n`。下の変数が使える |
-| `font` | `sans` | `sans` / `sans-bold` / `serif` / `mono`（PC のフォント）か、リポジトリ内の `.ttf` `.otf` `.ttc` |
-| `size` | 48 | 文字の大きさ（px、8–400） |
-| `color` | white | |
-| `position` | `bottom-right` | `top-left` `top` `top-right` `left` `center` `right` `bottom-left` `bottom` `bottom-right` |
-| `margin` | 48 | 枠の端からの距離（px） |
-| `uppercase` | false | 大文字にする |
-| `box` / `box_color` | false / `#00000080` | 文字の後ろに帯 |
-| `shadow` / `shadow_color` | 0 / `#000000B0` | 影のずれ（px） |
-| `border` / `border_color` | 0 / black | 縁取りの太さ（px） |
-| `from` / `until` | 0 / 0 | 表示する時間（秒）。0 は最初から / 最後まで |
+|---|---|---|---|
+| `text` | （必須） | 200字まで。改行は `\n`。下の変数が使える | — |
+| `font` | `sans` | `sans` / `sans-bold` / `serif` / `mono`（PC のフォント）か、リポジトリ内の `.ttf` `.otf` `.ttc` | — |
+| `size` | 48 | 文字の大きさ（px、8–400） | — |
+| `color` | white | | — |
+| `position` | `bottom-right` | `top-left` `top` `top-right` `left` `center` `right` `bottom-left` `bottom` `bottom-right` | — |
+| `margin` | 48 | 枠の端からの距離（px） | — |
+| `uppercase` | false | 大文字にする | — |
+| `box` / `box_color` | false / `#00000080` | 文字の後ろに帯 | — |
+| `shadow` / `shadow_color` | 0 / `#000000B0` | 影のずれ（px） | — |
+| `border` / `border_color` | 0 / black | 縁取りの太さ（px） | — |
+| `from` / `until` | 0 / 0 | 表示する時間（秒）。0 は最初から / 最後まで | — |
 
 ### AR のエフェクト
 
