@@ -61,15 +61,16 @@ setlog-remix 側で `bin/setup-ar.sh` を実行済みであること。GPU は�
 ### いちばん上
 
 | キー | 既定 | |
-|---|---|---|---|
-| `spec` | 1 | 書式の版。今は 1 | — |
-| `name` | id | 一覧に出る名前（40字まで） | — |
-| `description` | "" | 一覧で名前の横に出る説明（120字まで） | — |
-| `order` | 100 | 一覧の並び順（小さいほど上） | — |
-| `author` | "" | 作者 | — |
-| `clip` | | どこを使うか（下） | — |
-| `frame` | | 枠への収め方（下） | — |
-| `effects` | [] | 上から順にかかるエフェクト（24個まで） | — |
+|---|---|---|
+| `spec` | 1 | 書式の版。今は 1 |
+| `name` | id | 一覧に出る名前（40字まで） |
+| `description` | "" | 一覧で名前の横に出る説明（120字まで） |
+| `order` | 100 | 一覧の並び順（小さいほど上） |
+| `author` | "" | 作者 |
+| `post_caption` | true | false にすると、setlog に一言を送らない（一言を映像の中に描くフォーマット用。吹き出しなどで同じ言葉が二重に出るのを防ぐ） |
+| `clip` | | どこを使うか（下） |
+| `frame` | | 枠への収め方（下） |
+| `effects` | [] | 上から順にかかるエフェクト（24個まで） |
 
 ### clip
 
@@ -84,10 +85,10 @@ setlog-remix 側で `bin/setup-ar.sh` を実行済みであること。GPU は�
 ### frame
 
 | キー | 既定 | |
-|---|---|---|---|
-| `mode` | `fill` | `fill` は切り取って枠いっぱいに表示し、`fit` は全体を収めて余白をぼかしで埋める | — |
-| `turn` | `none` | 縦長の動画を `ccw`（反時計回り）/ `cw`（時計回り）に回転して横向きにしてから収める | — |
-| `background` | `#0E0E10` | 予備の背景色 | — |
+|---|---|---|
+| `mode` | `fill` | `fill` は切り取って枠いっぱいに表示し、`fit` は全体を収めて余白をぼかしで埋める |
+| `turn` | `none` | 縦長の動画を `ccw`（反時計回り）/ `cw`（時計回り）に回転して横向きにしてから収める |
+| `background` | `#0E0E10` | 予備の背景色 |
 
 ### effects
 
@@ -118,18 +119,18 @@ setlog-remix 側で `bin/setup-ar.sh` を実行済みであること。GPU は�
 `text`:
 
 | キー | 既定 | |
-|---|---|---|---|
-| `text` | （必須） | 200字まで。改行は `\n`。下の変数が使える | — |
-| `font` | `sans` | `sans` / `sans-bold` / `serif` / `mono`（PC のフォント）か、リポジトリ内の `.ttf` `.otf` `.ttc` | — |
-| `size` | 48 | 文字の大きさ（px、8–400） | — |
-| `color` | white | | — |
-| `position` | `bottom-right` | `top-left` `top` `top-right` `left` `center` `right` `bottom-left` `bottom` `bottom-right` | — |
-| `margin` | 48 | 枠の端からの距離（px） | — |
-| `uppercase` | false | 大文字にする | — |
-| `box` / `box_color` | false / `#00000080` | 文字の後ろに帯 | — |
-| `shadow` / `shadow_color` | 0 / `#000000B0` | 影のずれ（px） | — |
-| `border` / `border_color` | 0 / black | 縁取りの太さ（px） | — |
-| `from` / `until` | 0 / 0 | 表示する時間（秒）。0 は最初から / 最後まで | — |
+|---|---|---|
+| `text` | （必須） | 200字まで。改行は `\n`。下の変数が使える |
+| `font` | `sans` | `sans` / `sans-bold` / `serif` / `mono`（PC のフォント）か、リポジトリ内の `.ttf` `.otf` `.ttc` |
+| `size` | 48 | 文字の大きさ（px、8–400） |
+| `color` | white | |
+| `position` | `bottom-right` | `top-left` `top` `top-right` `left` `center` `right` `bottom-left` `bottom` `bottom-right` |
+| `margin` | 48 | 枠の端からの距離（px） |
+| `uppercase` | false | 大文字にする |
+| `box` / `box_color` | false / `#00000080` | 文字の後ろに帯 |
+| `shadow` / `shadow_color` | 0 / `#000000B0` | 影のずれ（px） |
+| `border` / `border_color` | 0 / black | 縁取りの太さ（px） |
+| `from` / `until` | 0 / 0 | 表示する時間（秒）。0 は最初から / 最後まで |
 
 ### AR のエフェクト
 

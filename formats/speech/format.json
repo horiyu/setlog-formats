@@ -3,6 +3,7 @@
   "name": "吹き出し",
   "description": "写っている人の頭の上に、一言の吹き出しがついていく",
   "order": 160,
+  "post_caption": false,
   "clip": { "mode": "head", "duration": 3 },
   "effects": [
     { "type": "speech", "text": "{caption}", "size": 52 }
